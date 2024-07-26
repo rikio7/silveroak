@@ -1,0 +1,138 @@
+/* Welcome.css */
+
+/* Container styling */
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Card styling */
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px; /* Increased max-width for more space */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.form{
+    display: block;
+}
+/* Fieldset styling for 2x2 grid */
+.card fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgba(240, 240, 240, 0.8); /* Light gray with transparency */
+}
+
+/* Align items within fieldset in 2x2 grid, excluding legend */
+.card fieldset > *:not(legend) {
+    flex: 1 1 calc(50% - 15px); /* Two items per row */
+}
+
+/* Legend styling */
+.card legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.rows {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next row */
+    justify-content: space-between; /* Space items evenly along the main axis */
+}
+
+/* Style each input row inside the rows container */
+.rows .input-row {
+    width: 48%; /* Adjust width as needed to fit 2 items per row */
+    margin-bottom: 10px; /* Add spacing between rows */
+}
+
+/* Input row styling */
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 0 0;
+    grid-gap: 15px;
+}
+
+/* Attribute row styling */
+.attribute-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Skills row styling */
+.skills-row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Skills checkboxes grid styling */
+.skills-checkboxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 10px;
+}
+
+/* Submit button styling */
+.submit-button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .character-creation-form {
+        padding: 15px;
+    }
+
+    .character-creation-form fieldset {
+        padding: 8px;
+    }
+
+    .character-creation-form legend {
+        font-size: 1.1em;
+    }
+
+    .radio-options label, .checkbox-options label {
+        font-size: 0.9em;
+    }
+
+    .character-creation-form button[type="submit"] {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}

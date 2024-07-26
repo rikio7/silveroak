@@ -1,0 +1,36 @@
+/* Story.css */
+.story-container {
+    background-color: #2d2d2d; /* Dark background color */
+    color: #ffffff; /* Light text color for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/public/wwd.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .scard {
+    background-color: #a18b6e; /* Light brown color for the card */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px;
+    text-align: left;
+  }
+  
+  h1 {
+    color: #ffffff; /* Light text color */
+    text-align: center;
+  }
+  
+  p {
+    color: #ffffff; /* Light text color */
+    line-height: 1.6;
+  }
+  

@@ -1,0 +1,47 @@
+/* About.css */
+.about {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-image: url('/public/story.jpg'); /* Use navbarbg.jpg as the background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  .content {
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background for better readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .content h1 {
+    font-size: 2.5em;
+    color: #f0e68c; /* Brighter color for better visibility */
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .content li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #d2b48c; /* Light brown color for names */
+  }
+  
